@@ -1,0 +1,879 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 25
+Design : accel_top
+Version: V-2023.12-SP4
+Date   : Fri May 29 14:19:18 2026
+****************************************
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_regs/ready_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/ready_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path      Voltage
+  ---------------------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00      
+  clock network delay (ideal)              0.00       0.00      
+  u_regs/ready_reg/CLK (DFFARX1_RVT)       0.00       0.00 r    1.05
+  u_regs/ready_reg/QN (DFFARX1_RVT)        0.07       0.07 r    1.05
+  u_regs/U409/Y (AND2X1_RVT)               0.04       0.11 r    1.05
+  u_regs/ready_reg/D (DFFARX1_RVT)         0.02       0.13 r    1.05
+  data arrival time                                   0.13      
+
+  clock clk (rise edge)                    0.00       0.00      
+  clock network delay (ideal)              0.00       0.00      
+  clock uncertainty                        0.25       0.25      
+  u_regs/ready_reg/CLK (DFFARX1_RVT)       0.00       0.25 r    
+  library hold time                       -0.01       0.24      
+  data required time                                  0.24      
+  ---------------------------------------------------------------------
+  data required time                                  0.24      
+  data arrival time                                  -0.13      
+  ---------------------------------------------------------------------
+  slack (VIOLATED)                                   -0.11      
+
+
+  Startpoint: u_regs/sc_state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_start_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/sc_state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    1.05
+  u_regs/sc_state_reg[0]/QN (DFFARX1_RVT)                 0.07       0.07 r    1.05
+  u_regs/U780/Y (AND3X1_RVT)                              0.05       0.12 r    1.05
+  u_regs/arr_start_reg/D (DFFARX1_RVT)                    0.01       0.13 r    1.05
+  data arrival time                                                  0.13      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_start_reg/CLK (DFFARX1_RVT)                  0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.13      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11      
+
+
+  Startpoint: u_regs/sc_cnt_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/sc_cnt_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/sc_cnt_reg[0]/CLK (DFFARX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/sc_cnt_reg[0]/QN (DFFARX1_RVT)                   0.08       0.08 r    1.05
+  u_regs/U2840/Y (AND2X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/sc_cnt_reg[0]/D (DFFARX1_RVT)                    0.01       0.13 r    1.05
+  data arrival time                                                  0.13      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/sc_cnt_reg[0]/CLK (DFFARX1_RVT)                  0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.13      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11      
+
+
+  Startpoint: u_regs/a_buf_reg[7][7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[7][7]/CLK (DFFX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/a_buf_reg[7][7]/Q (DFFX1_RVT)                    0.08       0.08 r    1.05
+  u_regs/U2839/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/arr_act_data_reg[7]/D (DFFARX1_RVT)              0.01       0.13 r    1.05
+  data arrival time                                                  0.13      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[7]/CLK (DFFARX1_RVT)            0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.13      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11      
+
+
+  Startpoint: u_regs/a_buf_reg[7][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[7][5]/CLK (DFFX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/a_buf_reg[7][5]/Q (DFFX1_RVT)                    0.08       0.08 r    1.05
+  u_regs/U2832/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/arr_act_data_reg[5]/D (DFFARX1_RVT)              0.01       0.13 r    1.05
+  data arrival time                                                  0.13      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[5]/CLK (DFFARX1_RVT)            0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.13      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11      
+
+
+  Startpoint: u_regs/a_buf_reg[7][4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[7][4]/CLK (DFFX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/a_buf_reg[7][4]/Q (DFFX1_RVT)                    0.08       0.08 r    1.05
+  u_regs/U2825/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/arr_act_data_reg[4]/D (DFFARX1_RVT)              0.01       0.13 r    1.05
+  data arrival time                                                  0.13      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[4]/CLK (DFFARX1_RVT)            0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.13      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11      
+
+
+  Startpoint: u_regs/a_buf_reg[7][3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[7][3]/CLK (DFFX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/a_buf_reg[7][3]/Q (DFFX1_RVT)                    0.08       0.08 r    1.05
+  u_regs/U2818/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/arr_act_data_reg[3]/D (DFFARX1_RVT)              0.01       0.13 r    1.05
+  data arrival time                                                  0.13      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[3]/CLK (DFFARX1_RVT)            0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.13      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11      
+
+
+  Startpoint: u_regs/a_buf_reg[7][2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[7][2]/CLK (DFFX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/a_buf_reg[7][2]/Q (DFFX1_RVT)                    0.08       0.08 r    1.05
+  u_regs/U2811/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/arr_act_data_reg[2]/D (DFFARX1_RVT)              0.01       0.13 r    1.05
+  data arrival time                                                  0.13      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[2]/CLK (DFFARX1_RVT)            0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.13      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11      
+
+
+  Startpoint: u_regs/a_buf_reg[7][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[7][1]/CLK (DFFX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/a_buf_reg[7][1]/Q (DFFX1_RVT)                    0.08       0.08 r    1.05
+  u_regs/U2804/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/arr_act_data_reg[1]/D (DFFARX1_RVT)              0.01       0.13 r    1.05
+  data arrival time                                                  0.13      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[1]/CLK (DFFARX1_RVT)            0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.13      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11      
+
+
+  Startpoint: u_regs/a_buf_reg[7][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[7][0]/CLK (DFFX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/a_buf_reg[7][0]/Q (DFFX1_RVT)                    0.08       0.08 r    1.05
+  u_regs/U2797/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/arr_act_data_reg[0]/D (DFFARX1_RVT)              0.01       0.13 r    1.05
+  data arrival time                                                  0.13      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[0]/CLK (DFFARX1_RVT)            0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.13      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11      
+
+
+  Startpoint: u_regs/sc_cnt_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/sc_cnt_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/sc_cnt_reg[3]/CLK (DFFARX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/sc_cnt_reg[3]/QN (DFFARX1_RVT)                   0.07       0.07 r    1.05
+  u_regs/U2842/Y (OA221X1_RVT)                            0.05       0.12 r    1.05
+  u_regs/sc_cnt_reg[3]/D (DFFARX1_RVT)                    0.01       0.13 r    1.05
+  data arrival time                                                  0.13      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/sc_cnt_reg[3]/CLK (DFFARX1_RVT)                  0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.13      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.11      
+
+
+  Startpoint: u_regs/arr_start_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/done_sticky_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/arr_start_reg/CLK (DFFARX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/arr_start_reg/QN (DFFARX1_RVT)                   0.07       0.07 r    1.05
+  u_regs/U769/Y (AND2X1_RVT)                              0.03       0.10 r    1.05
+  u_regs/U772/Y (AND2X1_RVT)                              0.03       0.13 r    1.05
+  u_regs/done_sticky_reg/D (DFFARX1_RVT)                  0.01       0.14 r    1.05
+  data arrival time                                                  0.14      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/done_sticky_reg/CLK (DFFARX1_RVT)                0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.14      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.10      
+
+
+  Startpoint: u_regs/sc_cnt_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/sc_cnt_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/sc_cnt_reg[1]/CLK (DFFARX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/sc_cnt_reg[1]/QN (DFFARX1_RVT)                   0.08       0.08 r    1.05
+  u_regs/U2841/Y (OA221X1_RVT)                            0.06       0.13 r    1.05
+  u_regs/sc_cnt_reg[1]/D (DFFARX1_RVT)                    0.01       0.14 r    1.05
+  data arrival time                                                  0.14      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/sc_cnt_reg[1]/CLK (DFFARX1_RVT)                  0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.14      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.10      
+
+
+  Startpoint: u_regs/sc_state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/sc_state_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/sc_state_reg[1]/CLK (DFFARX1_RVT)                0.00       0.00 r    1.05
+  u_regs/sc_state_reg[1]/QN (DFFARX1_RVT)                 0.08       0.08 r    1.05
+  u_regs/U782/SO (HADDX1_RVT)                             0.06       0.14 r    1.05
+  u_regs/sc_state_reg[1]/D (DFFARX1_RVT)                  0.01       0.15 r    1.05
+  data arrival time                                                  0.15      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/sc_state_reg[1]/CLK (DFFARX1_RVT)                0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.15      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09      
+
+
+  Startpoint: u_regs/sc_cnt_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/sc_cnt_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/sc_cnt_reg[4]/CLK (DFFARX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/sc_cnt_reg[4]/QN (DFFARX1_RVT)                   0.08       0.08 r    1.05
+  u_regs/U2844/Y (OA221X1_RVT)                            0.06       0.14 r    1.05
+  u_regs/sc_cnt_reg[4]/D (DFFARX1_RVT)                    0.01       0.15 r    1.05
+  data arrival time                                                  0.15      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/sc_cnt_reg[4]/CLK (DFFARX1_RVT)                  0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.15      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09      
+
+
+  Startpoint: u_regs/sc_state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/clk_gate_sc_cnt_reg/latch
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/sc_state_reg[1]/CLK (DFFARX1_RVT)                0.00       0.00 r    1.05
+  u_regs/sc_state_reg[1]/QN (DFFARX1_RVT)                 0.08       0.08 r    1.05
+  u_regs/U941/Y (AO21X1_RVT)                              0.05       0.13 r    1.05
+  u_regs/clk_gate_sc_cnt_reg/EN (SNPS_CLOCK_GATE_HIGH_accel_regs_135)
+                                                          0.00       0.13 r    
+  u_regs/clk_gate_sc_cnt_reg/latch/EN (CGLPPRX2_RVT)      0.01       0.14 r    1.05
+  data arrival time                                                  0.14      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/clk_gate_sc_cnt_reg/latch/CLK (CGLPPRX2_RVT)     0.00       0.25 r    
+  clock gating hold time                                 -0.02       0.23      
+  data required time                                                 0.23      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.23      
+  data arrival time                                                 -0.14      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08      
+
+
+  Startpoint: u_regs/sc_state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/sc_state_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/sc_state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    1.05
+  u_regs/sc_state_reg[0]/Q (DFFARX1_RVT)                  0.11       0.11 r    1.05
+  u_regs/U784/SO (HADDX1_RVT)                             0.05       0.16 r    1.05
+  u_regs/sc_state_reg[0]/D (DFFARX1_RVT)                  0.01       0.17 r    1.05
+  data arrival time                                                  0.17      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/sc_state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.17      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.07      
+
+
+  Startpoint: u_regs/a_buf_reg[7][6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[7][6]/CLK (DFFX1_RVT)                  0.00       0.00 r    1.05
+  u_regs/a_buf_reg[7][6]/Q (DFFX1_RVT)                    0.09       0.09 f    1.05
+  u_regs/U336/Y (AOI22X1_RVT)                             0.07       0.16 r    1.05
+  u_regs/arr_act_data_reg[6]/D (DFFASX1_RVT)              0.01       0.17 r    1.05
+  data arrival time                                                  0.17      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[6]/CLK (DFFASX1_RVT)            0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.17      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06      
+
+
+  Startpoint: u_regs/a_buf_reg[57][6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[62]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[57][6]/CLK (DFFX1_RVT)                 0.00       0.00 r    1.05
+  u_regs/a_buf_reg[57][6]/Q (DFFX1_RVT)                   0.08       0.08 r    1.05
+  u_regs/U2541/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/U2545/Y (OA21X1_RVT)                             0.05       0.17 r    1.05
+  u_regs/arr_act_data_reg[62]/D (DFFARX1_RVT)             0.01       0.18 r    1.05
+  data arrival time                                                  0.18      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[62]/CLK (DFFARX1_RVT)           0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.18      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06      
+
+
+  Startpoint: u_regs/a_buf_reg[57][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[61]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[57][5]/CLK (DFFX1_RVT)                 0.00       0.00 r    1.05
+  u_regs/a_buf_reg[57][5]/Q (DFFX1_RVT)                   0.08       0.08 r    1.05
+  u_regs/U2536/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/U2540/Y (OA21X1_RVT)                             0.05       0.17 r    1.05
+  u_regs/arr_act_data_reg[61]/D (DFFARX1_RVT)             0.01       0.18 r    1.05
+  data arrival time                                                  0.18      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[61]/CLK (DFFARX1_RVT)           0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.18      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06      
+
+
+  Startpoint: u_regs/a_buf_reg[57][4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[60]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[57][4]/CLK (DFFX1_RVT)                 0.00       0.00 r    1.05
+  u_regs/a_buf_reg[57][4]/Q (DFFX1_RVT)                   0.08       0.08 r    1.05
+  u_regs/U2531/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/U2535/Y (OA21X1_RVT)                             0.05       0.17 r    1.05
+  u_regs/arr_act_data_reg[60]/D (DFFARX1_RVT)             0.01       0.18 r    1.05
+  data arrival time                                                  0.18      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[60]/CLK (DFFARX1_RVT)           0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.18      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06      
+
+
+  Startpoint: u_regs/a_buf_reg[57][3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[59]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[57][3]/CLK (DFFX1_RVT)                 0.00       0.00 r    1.05
+  u_regs/a_buf_reg[57][3]/Q (DFFX1_RVT)                   0.08       0.08 r    1.05
+  u_regs/U2526/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/U2530/Y (OA21X1_RVT)                             0.05       0.17 r    1.05
+  u_regs/arr_act_data_reg[59]/D (DFFARX1_RVT)             0.01       0.18 r    1.05
+  data arrival time                                                  0.18      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[59]/CLK (DFFARX1_RVT)           0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.18      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06      
+
+
+  Startpoint: u_regs/a_buf_reg[57][2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[58]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[57][2]/CLK (DFFX1_RVT)                 0.00       0.00 r    1.05
+  u_regs/a_buf_reg[57][2]/Q (DFFX1_RVT)                   0.08       0.08 r    1.05
+  u_regs/U2521/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/U2525/Y (OA21X1_RVT)                             0.05       0.17 r    1.05
+  u_regs/arr_act_data_reg[58]/D (DFFARX1_RVT)             0.01       0.18 r    1.05
+  data arrival time                                                  0.18      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[58]/CLK (DFFARX1_RVT)           0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.18      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06      
+
+
+  Startpoint: u_regs/a_buf_reg[57][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[57]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[57][1]/CLK (DFFX1_RVT)                 0.00       0.00 r    1.05
+  u_regs/a_buf_reg[57][1]/Q (DFFX1_RVT)                   0.08       0.08 r    1.05
+  u_regs/U2516/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/U2520/Y (OA21X1_RVT)                             0.05       0.17 r    1.05
+  u_regs/arr_act_data_reg[57]/D (DFFARX1_RVT)             0.01       0.18 r    1.05
+  data arrival time                                                  0.18      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[57]/CLK (DFFARX1_RVT)           0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.18      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06      
+
+
+  Startpoint: u_regs/a_buf_reg[57][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_regs/arr_act_data_reg[56]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_regs         35000                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_regs/a_buf_reg[57][0]/CLK (DFFX1_RVT)                 0.00       0.00 r    1.05
+  u_regs/a_buf_reg[57][0]/Q (DFFX1_RVT)                   0.08       0.08 r    1.05
+  u_regs/U2511/Y (AO22X1_RVT)                             0.04       0.12 r    1.05
+  u_regs/U2515/Y (OA21X1_RVT)                             0.05       0.17 r    1.05
+  u_regs/arr_act_data_reg[56]/D (DFFARX1_RVT)             0.01       0.18 r    1.05
+  data arrival time                                                  0.18      
+
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  clock uncertainty                                       0.25       0.25      
+  u_regs/arr_act_data_reg[56]/CLK (DFFARX1_RVT)           0.00       0.25 r    
+  library hold time                                      -0.01       0.24      
+  data required time                                                 0.24      
+  ------------------------------------------------------------------------------------
+  data required time                                                 0.24      
+  data arrival time                                                 -0.18      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06      
+
+
+1

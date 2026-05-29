@@ -1,0 +1,1898 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 25
+Design : accel_top
+Version: V-2023.12-SP4
+Date   : Fri May 29 14:19:18 2026
+****************************************
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_compute/state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_614J1_126_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[1]/CLK (SDFFASX1_RVT)               0.00       0.00 r    0.78
+  u_compute/state_reg[1]/QN (SDFFASX1_RVT)                0.17       0.17 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.38       0.55 f    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.25       0.80 f    0.78
+  u_compute/U854/Y (NBUFFX2_RVT)                          0.25       1.05 f    0.78
+  u_compute/U226/Y (NOR2X2_RVT)                           0.30       1.35 r    0.78
+  u_compute/DP_OP_614J1_126_8972/I2[4] (systolic_array_8x8_DP_OP_614J1_126_8972_0)
+                                                          0.00       1.35 r    
+  u_compute/DP_OP_614J1_126_8972/U448/Y (INVX1_RVT)       0.21       1.56 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U336/Y (NOR2X2_RVT)      0.11       1.67 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U491/CO (FADDX1_RVT)     0.15       1.82 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U511/CO (FADDX1_RVT)     0.14       1.97 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U526/CO (FADDX1_RVT)     0.16       2.13 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U407/Y (XOR2X2_RVT)      0.16       2.29 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U420/Y (XOR2X2_RVT)      0.15       2.43 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U352/Y (NOR2X0_RVT)      0.10       2.53 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U550/Y (OAI21X2_RVT)     0.13       2.66 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U553/Y (AOI21X1_RVT)     0.11       2.77 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U337/Y (OAI21X2_RVT)     0.11       2.88 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U653/Y (AO21X1_RVT)      0.10       2.98 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U656/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U657/CO (FADDX1_RVT)     0.14       3.25 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U658/CO (FADDX1_RVT)     0.14       3.39 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U659/CO (FADDX1_RVT)     0.14       3.53 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U660/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U661/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U662/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U663/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U664/CO (FADDX1_RVT)     0.14       4.22 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U665/CO (FADDX1_RVT)     0.14       4.36 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U415/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U418/Y (NAND3X0_RVT)     0.07       4.48 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U666/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U412/Y (NAND2X0_RVT)     0.05       4.68 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U398/Y (AND3X1_RVT)      0.10       4.78 f    0.78
+  u_compute/DP_OP_614J1_126_8972/O1[32] (systolic_array_8x8_DP_OP_614J1_126_8972_0)
+                                                          0.00       4.78 f    
+  u_compute/U827/Y (INVX0_RVT)                            0.18       4.97 r    0.78
+  u_compute/U441/Y (OA21X1_RVT)                           0.19       5.16 r    0.78
+  u_compute/U4451/Y (NBUFFX2_RVT)                         0.21       5.37 r    0.78
+  u_compute/U4396/Y (AO21X1_RVT)                          0.22       5.60 r    0.78
+  u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[29]/D (DFFARX1_RVT)
+                                                          0.10       5.70 r    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[29]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.07       4.98      
+  data required time                                                 4.98      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.98      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_614J1_126_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[1]/CLK (SDFFASX1_RVT)               0.00       0.00 r    0.78
+  u_compute/state_reg[1]/QN (SDFFASX1_RVT)                0.17       0.17 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.38       0.55 f    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.25       0.80 f    0.78
+  u_compute/U854/Y (NBUFFX2_RVT)                          0.25       1.05 f    0.78
+  u_compute/U226/Y (NOR2X2_RVT)                           0.30       1.35 r    0.78
+  u_compute/DP_OP_614J1_126_8972/I2[4] (systolic_array_8x8_DP_OP_614J1_126_8972_0)
+                                                          0.00       1.35 r    
+  u_compute/DP_OP_614J1_126_8972/U448/Y (INVX1_RVT)       0.21       1.56 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U336/Y (NOR2X2_RVT)      0.11       1.67 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U491/CO (FADDX1_RVT)     0.15       1.82 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U511/CO (FADDX1_RVT)     0.14       1.97 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U526/CO (FADDX1_RVT)     0.16       2.13 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U407/Y (XOR2X2_RVT)      0.16       2.29 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U420/Y (XOR2X2_RVT)      0.15       2.43 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U352/Y (NOR2X0_RVT)      0.10       2.53 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U550/Y (OAI21X2_RVT)     0.13       2.66 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U553/Y (AOI21X1_RVT)     0.11       2.77 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U337/Y (OAI21X2_RVT)     0.11       2.88 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U653/Y (AO21X1_RVT)      0.10       2.98 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U656/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U657/CO (FADDX1_RVT)     0.14       3.25 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U658/CO (FADDX1_RVT)     0.14       3.39 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U659/CO (FADDX1_RVT)     0.14       3.53 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U660/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U661/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U662/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U663/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U664/CO (FADDX1_RVT)     0.14       4.22 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U665/CO (FADDX1_RVT)     0.14       4.36 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U415/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U418/Y (NAND3X0_RVT)     0.07       4.48 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U666/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U412/Y (NAND2X0_RVT)     0.05       4.68 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U398/Y (AND3X1_RVT)      0.10       4.78 f    0.78
+  u_compute/DP_OP_614J1_126_8972/O1[32] (systolic_array_8x8_DP_OP_614J1_126_8972_0)
+                                                          0.00       4.78 f    
+  u_compute/U827/Y (INVX0_RVT)                            0.18       4.97 r    0.78
+  u_compute/U441/Y (OA21X1_RVT)                           0.19       5.16 r    0.78
+  u_compute/U4451/Y (NBUFFX2_RVT)                         0.21       5.37 r    0.78
+  u_compute/U4453/Y (AO21X1_RVT)                          0.22       5.60 r    0.78
+  u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[30]/D (DFFARX1_RVT)
+                                                          0.10       5.70 r    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[30]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.07       4.98      
+  data required time                                                 4.98      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.98      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_614J1_126_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[1]/CLK (SDFFASX1_RVT)               0.00       0.00 r    0.78
+  u_compute/state_reg[1]/QN (SDFFASX1_RVT)                0.17       0.17 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.38       0.55 f    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.25       0.80 f    0.78
+  u_compute/U854/Y (NBUFFX2_RVT)                          0.25       1.05 f    0.78
+  u_compute/U226/Y (NOR2X2_RVT)                           0.30       1.35 r    0.78
+  u_compute/DP_OP_614J1_126_8972/I2[4] (systolic_array_8x8_DP_OP_614J1_126_8972_0)
+                                                          0.00       1.35 r    
+  u_compute/DP_OP_614J1_126_8972/U448/Y (INVX1_RVT)       0.21       1.56 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U336/Y (NOR2X2_RVT)      0.11       1.67 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U491/CO (FADDX1_RVT)     0.15       1.82 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U511/CO (FADDX1_RVT)     0.14       1.97 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U526/CO (FADDX1_RVT)     0.16       2.13 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U407/Y (XOR2X2_RVT)      0.16       2.29 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U420/Y (XOR2X2_RVT)      0.15       2.43 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U352/Y (NOR2X0_RVT)      0.10       2.53 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U550/Y (OAI21X2_RVT)     0.13       2.66 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U553/Y (AOI21X1_RVT)     0.11       2.77 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U337/Y (OAI21X2_RVT)     0.11       2.88 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U653/Y (AO21X1_RVT)      0.10       2.98 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U656/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U657/CO (FADDX1_RVT)     0.14       3.25 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U658/CO (FADDX1_RVT)     0.14       3.39 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U659/CO (FADDX1_RVT)     0.14       3.53 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U660/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U661/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U662/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U663/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U664/CO (FADDX1_RVT)     0.14       4.22 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U665/CO (FADDX1_RVT)     0.14       4.36 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U415/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U418/Y (NAND3X0_RVT)     0.07       4.48 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U666/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U412/Y (NAND2X0_RVT)     0.05       4.68 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U398/Y (AND3X1_RVT)      0.10       4.78 f    0.78
+  u_compute/DP_OP_614J1_126_8972/O1[32] (systolic_array_8x8_DP_OP_614J1_126_8972_0)
+                                                          0.00       4.78 f    
+  u_compute/U827/Y (INVX0_RVT)                            0.18       4.97 r    0.78
+  u_compute/U441/Y (OA21X1_RVT)                           0.19       5.16 r    0.78
+  u_compute/U4451/Y (NBUFFX2_RVT)                         0.21       5.37 r    0.78
+  u_compute/U4407/Y (AO21X1_RVT)                          0.22       5.60 r    0.78
+  u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[5]/D (DFFARX1_RVT)
+                                                          0.10       5.70 r    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[5]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.07       4.98      
+  data required time                                                 4.98      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.98      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_614J1_126_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[1]/CLK (SDFFASX1_RVT)               0.00       0.00 r    0.78
+  u_compute/state_reg[1]/QN (SDFFASX1_RVT)                0.17       0.17 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.38       0.55 f    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.25       0.80 f    0.78
+  u_compute/U854/Y (NBUFFX2_RVT)                          0.25       1.05 f    0.78
+  u_compute/U226/Y (NOR2X2_RVT)                           0.30       1.35 r    0.78
+  u_compute/DP_OP_614J1_126_8972/I2[4] (systolic_array_8x8_DP_OP_614J1_126_8972_0)
+                                                          0.00       1.35 r    
+  u_compute/DP_OP_614J1_126_8972/U448/Y (INVX1_RVT)       0.21       1.56 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U336/Y (NOR2X2_RVT)      0.11       1.67 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U491/CO (FADDX1_RVT)     0.15       1.82 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U511/CO (FADDX1_RVT)     0.14       1.97 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U526/CO (FADDX1_RVT)     0.16       2.13 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U407/Y (XOR2X2_RVT)      0.16       2.29 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U420/Y (XOR2X2_RVT)      0.15       2.43 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U352/Y (NOR2X0_RVT)      0.10       2.53 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U550/Y (OAI21X2_RVT)     0.13       2.66 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U553/Y (AOI21X1_RVT)     0.11       2.77 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U337/Y (OAI21X2_RVT)     0.11       2.88 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U653/Y (AO21X1_RVT)      0.10       2.98 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U656/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U657/CO (FADDX1_RVT)     0.14       3.25 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U658/CO (FADDX1_RVT)     0.14       3.39 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U659/CO (FADDX1_RVT)     0.14       3.53 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U660/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U661/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U662/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U663/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U664/CO (FADDX1_RVT)     0.14       4.22 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U665/CO (FADDX1_RVT)     0.14       4.36 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U415/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U418/Y (NAND3X0_RVT)     0.07       4.48 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U666/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U412/Y (NAND2X0_RVT)     0.05       4.68 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U398/Y (AND3X1_RVT)      0.10       4.78 f    0.78
+  u_compute/DP_OP_614J1_126_8972/O1[32] (systolic_array_8x8_DP_OP_614J1_126_8972_0)
+                                                          0.00       4.78 f    
+  u_compute/U827/Y (INVX0_RVT)                            0.18       4.97 r    0.78
+  u_compute/U441/Y (OA21X1_RVT)                           0.19       5.16 r    0.78
+  u_compute/U4451/Y (NBUFFX2_RVT)                         0.21       5.37 r    0.78
+  u_compute/U4398/Y (AO21X1_RVT)                          0.22       5.60 r    0.78
+  u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[13]/D (DFFARX1_RVT)
+                                                          0.10       5.70 r    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[13]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.07       4.98      
+  data required time                                                 4.98      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.98      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_614J1_126_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[1]/CLK (SDFFASX1_RVT)               0.00       0.00 r    0.78
+  u_compute/state_reg[1]/QN (SDFFASX1_RVT)                0.17       0.17 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.38       0.55 f    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.25       0.80 f    0.78
+  u_compute/U854/Y (NBUFFX2_RVT)                          0.25       1.05 f    0.78
+  u_compute/U226/Y (NOR2X2_RVT)                           0.30       1.35 r    0.78
+  u_compute/DP_OP_614J1_126_8972/I2[4] (systolic_array_8x8_DP_OP_614J1_126_8972_0)
+                                                          0.00       1.35 r    
+  u_compute/DP_OP_614J1_126_8972/U448/Y (INVX1_RVT)       0.21       1.56 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U336/Y (NOR2X2_RVT)      0.11       1.67 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U491/CO (FADDX1_RVT)     0.15       1.82 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U511/CO (FADDX1_RVT)     0.14       1.97 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U526/CO (FADDX1_RVT)     0.16       2.13 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U407/Y (XOR2X2_RVT)      0.16       2.29 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U420/Y (XOR2X2_RVT)      0.15       2.43 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U352/Y (NOR2X0_RVT)      0.10       2.53 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U550/Y (OAI21X2_RVT)     0.13       2.66 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U553/Y (AOI21X1_RVT)     0.11       2.77 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U337/Y (OAI21X2_RVT)     0.11       2.88 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U653/Y (AO21X1_RVT)      0.10       2.98 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U656/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U657/CO (FADDX1_RVT)     0.14       3.25 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U658/CO (FADDX1_RVT)     0.14       3.39 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U659/CO (FADDX1_RVT)     0.14       3.53 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U660/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U661/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U662/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U663/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U664/CO (FADDX1_RVT)     0.14       4.22 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U665/CO (FADDX1_RVT)     0.14       4.36 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U415/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U418/Y (NAND3X0_RVT)     0.07       4.48 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U666/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_614J1_126_8972/U412/Y (NAND2X0_RVT)     0.05       4.68 f    0.78
+  u_compute/DP_OP_614J1_126_8972/U398/Y (AND3X1_RVT)      0.10       4.78 f    0.78
+  u_compute/DP_OP_614J1_126_8972/O1[32] (systolic_array_8x8_DP_OP_614J1_126_8972_0)
+                                                          0.00       4.78 f    
+  u_compute/U827/Y (INVX0_RVT)                            0.18       4.97 r    0.78
+  u_compute/U441/Y (OA21X1_RVT)                           0.19       5.16 r    0.78
+  u_compute/U4451/Y (NBUFFX2_RVT)                         0.21       5.37 r    0.78
+  u_compute/U835/Y (AO21X1_RVT)                           0.22       5.60 r    0.78
+  u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[16]/D (DFFARX1_RVT)
+                                                          0.10       5.70 r    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[0].pe_inst/accumulator_reg[16]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.07       4.98      
+  data required time                                                 4.98      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.98      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4337/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4275/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[29]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[29]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U778/Y (NBUFFX2_RVT)                          0.24       5.35 f    0.78
+  u_compute/U4256/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[2]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[2]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4337/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4273/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[4]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[4]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4262/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4261/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[5]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[5]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U779/Y (NBUFFX2_RVT)                          0.24       5.35 f    0.78
+  u_compute/U4310/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[8]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[8]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U778/Y (NBUFFX2_RVT)                          0.24       5.35 f    0.78
+  u_compute/U4357/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[9]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[9]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U778/Y (NBUFFX2_RVT)                          0.24       5.35 f    0.78
+  u_compute/U4304/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[11]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[11]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4337/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4314/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[13]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[13]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4255/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4302/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[14]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[14]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U779/Y (NBUFFX2_RVT)                          0.24       5.35 f    0.78
+  u_compute/U4312/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[16]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[16]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4262/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4338/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[30]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[30]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4255/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4305/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[19]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[19]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4255/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4292/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[20]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[20]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[21]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U778/Y (NBUFFX2_RVT)                          0.24       5.35 f    0.78
+  u_compute/U4343/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[21]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[21]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[22]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4262/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4285/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[22]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[22]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4337/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4260/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[23]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[23]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U779/Y (NBUFFX2_RVT)                          0.24       5.35 f    0.78
+  u_compute/U4263/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[25]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[25]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[26]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4262/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4271/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[26]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[26]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4255/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4339/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[27]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[27]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+  Startpoint: u_compute/state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  accel_top          140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8 140000                saed32rvt_tt1p05v25c
+  systolic_array_8x8_DP_OP_621J1_133_8972_0
+                     8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  u_compute/state_reg[0]/CLK (DFFARX1_RVT)                0.00       0.00 r    0.78
+  u_compute/state_reg[0]/Q (DFFARX1_RVT)                  0.20       0.20 r    0.78
+  u_compute/U2347/Y (XNOR2X1_RVT)                         0.35       0.55 r    0.78
+  u_compute/U758/Y (OR2X2_RVT)                            0.23       0.78 r    0.78
+  u_compute/U799/Y (NBUFFX2_RVT)                          0.26       1.04 r    0.78
+  u_compute/U769/Y (NOR2X0_RVT)                           0.30       1.35 f    0.78
+  u_compute/DP_OP_621J1_133_8972/I2[2] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       1.35 f    
+  u_compute/DP_OP_621J1_133_8972/U425/Y (INVX1_RVT)       0.21       1.56 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U499/Y (NOR2X0_RVT)      0.12       1.68 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U529/CO (FADDX1_RVT)     0.13       1.81 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U558/S (FADDX1_RVT)      0.21       2.02 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U421/Y (XOR3X2_RVT)      0.21       2.23 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U554/S (FADDX1_RVT)      0.22       2.45 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U553/Y (NAND2X0_RVT)     0.07       2.51 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U331/Y (OAI21X2_RVT)     0.17       2.68 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U586/Y (AOI21X1_RVT)     0.08       2.76 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U587/Y (OAI21X2_RVT)     0.11       2.87 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U661/Y (AO21X1_RVT)      0.10       2.97 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U664/CO (FADDX1_RVT)     0.14       3.11 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U665/CO (FADDX1_RVT)     0.14       3.24 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U666/CO (FADDX1_RVT)     0.14       3.38 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U667/CO (FADDX1_RVT)     0.14       3.52 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U668/CO (FADDX1_RVT)     0.14       3.66 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U669/CO (FADDX1_RVT)     0.14       3.80 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U670/CO (FADDX1_RVT)     0.14       3.94 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U671/CO (FADDX1_RVT)     0.14       4.08 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U672/CO (FADDX1_RVT)     0.14       4.21 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U673/CO (FADDX1_RVT)     0.14       4.35 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U418/Y (NAND2X0_RVT)     0.05       4.41 f    0.78
+  u_compute/DP_OP_621J1_133_8972/U420/Y (NAND3X0_RVT)     0.07       4.47 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U674/CO (FADDX1_RVT)     0.15       4.62 r    0.78
+  u_compute/DP_OP_621J1_133_8972/U408/Y (XOR3X2_RVT)      0.11       4.73 f    0.78
+  u_compute/DP_OP_621J1_133_8972/O1[31] (systolic_array_8x8_DP_OP_621J1_133_8972_0)
+                                                          0.00       4.73 f    
+  u_compute/U852/Y (INVX0_RVT)                            0.15       4.88 r    0.78
+  u_compute/U174/Y (AOI21X2_RVT)                          0.23       5.11 f    0.78
+  u_compute/U4337/Y (NBUFFX2_RVT)                         0.24       5.35 f    0.78
+  u_compute/U4276/Y (AO21X1_RVT)                          0.25       5.60 f    0.78
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[28]/D (DFFARX1_RVT)
+                                                          0.10       5.70 f    0.78
+  data arrival time                                                  5.70      
+
+  clock clk (rise edge)                                   5.30       5.30      
+  clock network delay (ideal)                             0.00       5.30      
+  clock uncertainty                                      -0.25       5.05      
+  u_compute/gen_row[0].gen_col[7].pe_inst/accumulator_reg[28]/CLK (DFFARX1_RVT)
+                                                          0.00       5.05 r    
+  library setup time                                     -0.08       4.97      
+  data required time                                                 4.97      
+  ------------------------------------------------------------------------------------
+  data required time                                                 4.97      
+  data arrival time                                                 -5.70      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.72      
+
+
+1
